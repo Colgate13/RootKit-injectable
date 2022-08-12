@@ -1,0 +1,32 @@
+{
+  "name": "ladino",
+  "version": "1.0.0",
+  "description": "ladino ssh",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "startServer": "node dist/Server.js",
+    "buildJs": "tsc",
+    "buildClient": "webpack --env PRODUCTION -c ./webpack.client.config.js",
+    "buildServer": "webpack --env PRODUCTION -c ./webpack.server.config.js",
+    "buildCompileClient": "pkg dist/Client.js -o ./dist/Client",
+    "buildCompileServer": "pkg dist/Server.js -o ./dist/Server"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.5",
+    "@types/socket.io": "^3.0.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.3",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "pkg": "^5.8.0",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
+  }
+}
