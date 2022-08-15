@@ -1,9 +1,9 @@
 {
-  "name": "ladino",
+  "name": "root-kit-injectable",
   "version": "1.0.0",
-  "description": "ladino ssh",
-  "main": "dist/server.js",
-  "types": "dist/server.d.ts",
+  "description": "Rootkit injectable by windowns, linux, or macOs. injectable by executable or USB RudderDuck",
+  "main": "dist/Server.js",
+  "types": "dist/Server.d.ts",
   "files": [
     "dist/"
   ],
@@ -12,8 +12,9 @@
     "buildJs": "tsc",
     "buildClient": "webpack --env PRODUCTION -c ./webpack.client.config.js",
     "buildServer": "webpack --env PRODUCTION -c ./webpack.server.config.js",
-    "buildCompileClient": "pkg dist/Client.js -o ./dist/Client",
-    "buildCompileServer": "pkg dist/Server.js -o ./dist/Server"
+    "buildCompileClient": "pkg dist/Client.js  --out-path ./dist",
+    "buildCompileServer": "pkg dist/Server.js  --out-path ./dist",
+    "buildAndCompileClient": "npm run buildClient && npm run buildCompileClient"
   },
   "devDependencies": {
     "@types/node": "^18.6.5",
