@@ -1,6 +1,3 @@
-# RootKit-injectable
-Rootkit injectable by exe, or linux executable on macOs application
-
 <h1 align="center">RootKit-injectable</h1>
 
 <p align="center">
