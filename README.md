@@ -47,9 +47,9 @@ npm run buildCompileServer
 
 Executables Ready to run in machine or insert in RudderDuck USB with SD Card or Make it available on a download mirror and configure rudderduck to download it from powershell/Terminal
 
-Client-win.exe -> Windowns
-Client-linux -> Linux
-Client-macos -> MacOs
+dist/Client-win.exe -> Windowns
+dist/Client-linux -> Linux
+dist/Client-macos -> MacOs
 ```
 
 
