@@ -43,6 +43,8 @@ node dist/Server.js
 
 Transpile Typescript to JavaScript and run - Client
 ```
+Change -> /src/modules/Client/Client.ts:6 to You Server IP and Server Port: Exemple: vps.machine.com:1337 or localhost:1337 or 127.0.0.0:1337
+
 npm run buildCompileServer
 
 Executables Ready to run in machine or insert in RudderDuck USB with SD Card or Make it available on a download mirror and configure rudderduck to download it from powershell/Terminal
