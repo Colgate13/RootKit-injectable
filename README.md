@@ -54,6 +54,13 @@ dist/Client-linux -> Linux
 dist/Client-macos -> MacOs
 ```
 
+RudderDuck - BADUSB to inject program
+```
+open your Arduino IDE
+Set your Arduino setting
+Verific and Upload to board
+Inject USB in Computer windowns;
+```
 
 ## License
 
