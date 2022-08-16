@@ -46,14 +46,14 @@ function getConfig(env) {
 
 function fillDev(config) {
   config.mode = 'development';
-  config.entry = './src/Server/Server.ts';
+  config.entry = './src/modules/Server/Server.ts';
 
   config.devtool = 'inline-source-map';
 }
 
 function fillProd(config) {
   config.mode = 'production';
-  config.entry = './src/Server/Server.ts';
+  config.entry = './src/modules/Server/Server.ts';
 }
 
 module.exports = (env) => {
